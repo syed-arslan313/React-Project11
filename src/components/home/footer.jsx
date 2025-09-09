@@ -33,7 +33,7 @@ function Footer() {
 
         <div className="flex flex-col gap-[16px] ">
           <h1 className="inter font-bold text-[17px] leading-[28px] text-white">
-            Company
+            Mi6 Company
           </h1>
 
           <ul className="text-[15px] text-white inter cursor-pointer flex flex-col gap-[12px]">

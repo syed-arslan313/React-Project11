@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url(https://db.onlinewebfonts.com/c/90b4039de1e854e881decb66c495b846?family=NeueHaasGroteskDisp+W02+UltTh);
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+.display {
+  font-family: "DM Serif Display", serif;
+}
+
+.neu {
+  font-family: "NeueHaasGroteskDisp W02 UltTh", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "JustSans";
+  src: url("./assets/JUST Sans Regular.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JustSans";
+  src: url("./assets/JUST Sans ExBold.otf") format("opentype");
+  font-style: normal;
+}
+
+.sansr {
+  font-family: "JustSans", sans-serif;
+  font-weight: 400;
+}
+
+.sansb {
+  font-family: "JustSans", sans-serif;
+  font-weight: 800;
+}
+
+.cont {
+  max-width: 1241px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* index.css ya app.css me */
+.partners-slider .slick-slide {
+  @apply opacity-40 transition-opacity duration-300;
+}
+
+.partners-slider .slick-center {
+  @apply opacity-100;
+  background: #413D45;
+  border-radius: 10px;
+}
+
+.partners-slider .slick-center * {
+  @apply text-white;
+}

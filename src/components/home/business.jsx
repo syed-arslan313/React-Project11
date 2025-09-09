@@ -5,12 +5,12 @@ import rightarrow from "../../assets/rarrow.svg";
 
 function Business() {
   return (
-    <div className="flex flex-col  items-center pt-[84px]">
-      <h1 className="display text-[48px] leading-[36px] text-[#98661C] font-bold">
+    <div className="flex flex-col  items-center md:pt-[84px] pt-[61px]">
+      <h1 className="display md:text-[48px] text-center md:text-start text-[40px] leading-[40px] md:leading-[36px] text-[#98661C] font-bold">
         Our Business Sectors
       </h1>
 
-      <p className="inter text-[14px] text-[#4B5563] pt-[26px] w-[30%] text-center">
+      <p className="inter text-[14px]  text-[#4B5563] pt-[26px] md:w-[30%] text-center">
         Golby Diop Holding operates across six key industries, each contributing
         to our vision of sustainable growth and innovation.
       </p>

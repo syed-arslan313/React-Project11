@@ -61,7 +61,7 @@ function Header() {
             <h1 className="display w-[285px] md:text-[64px] text-[50px] md:leading-[59px] leading-[49px] text-white text-center md:text-start  ">
               Building Sustainable Futures
             </h1>
-            <p className="neu text-base leading-6 black font- w-[80%] text-center md:text-star">
+            <p className="neu text-base leading-6 black font- w-[80%] text-center md:text-start md:text-star">
               Golby Diop Holding is a diversified group operating across six key
               sectors, delivering innovative solutions and creating lasting
               impact in the markets we serve.

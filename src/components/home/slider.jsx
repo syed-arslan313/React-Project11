@@ -16,16 +16,27 @@ function SimpleSlider() {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "10%",
+    responsive: [
+      {
+        breakpoint: 768, // 768px se neeche
+        settings: {
+          slidesToShow: 1, // sirf 1 slide
+          slidesToScroll: 1,
+          centerMode: false, // center mode off for mobile
+          centerPadding: "0", // padding 0
+        },
+      },
+    ],
   };
 
   return (
-    <div className="partners-slider relative w-[100%] mx-auto mt-[124px] gap-[68px] flex flex-col">
-      <div className="flex flex-row justify-between items-center cont mx-auto">
-        <h1 className="text-[48px] leading-[36px] text-[#98661C] display font-bold">
+    <div className="partners-slider relative w-[100%] mx-auto mt-[97px] md:mt-[124px] md:gap-[68px] gap-[51px] flex flex-col ">
+      <div className="flex flex-row justify-center md:justify-between items-center cont mx-auto">
+        <h1 className="md:text-[48px] text-center md:text-start text-[40px] md:leading-[36px] text-[#98661C] display font-bold">
           What Our Partners Say
         </h1>
 
-        <div className="flex flex-row gap-[20px] items-center">
+        <div className="md:flex hidden flex-row gap-[20px] items-center">
           <img
             src={LeftArrow}
             alt="prev"
@@ -42,9 +53,9 @@ function SimpleSlider() {
       </div>
 
       {/* Slider */}
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings} className=" md:px-0  px-[20px]">
         <div className="px-[10px] ">
-          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] ">
+          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] items-start ">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -59,7 +70,7 @@ function SimpleSlider() {
 
         {/* same slides copy */}
         <div className="px-[10px]">
-          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] ">
+          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] items-start ">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -73,7 +84,7 @@ function SimpleSlider() {
         </div>
 
         <div className="px-[10px]">
-          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] ">
+          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] items-start ">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -87,7 +98,7 @@ function SimpleSlider() {
         </div>
 
         <div className="px-[10px]">
-          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] ">
+          <div className=" flex flex-col  rounded-[10px] py-[37px] px-[28px] items-start ">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -101,7 +112,7 @@ function SimpleSlider() {
         </div>
 
         <div className="px-[10px]">
-          <div className=" flex flex-col rounded-[10px]  py-[37px] px-[28px] ">
+          <div className=" flex flex-col rounded-[10px]  py-[37px] px-[28px] items-start">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -115,7 +126,7 @@ function SimpleSlider() {
         </div>
 
         <div className="px-[10px]">
-          <div className=" flex flex-col rounded-[10px]  py-[37px] px-[28px] ">
+          <div className=" flex flex-col rounded-[10px]  py-[37px] px-[28px] items-start ">
             <img src={Comma} alt="comma" className="w-[67px] h-[46px]" />
             <p className="inter text-[21px] leading-[29px] text-black pb-[30px] pt-[20px]">
               Golby Diop Holding has been a trusted partner for over 5 years.
@@ -128,6 +139,21 @@ function SimpleSlider() {
           </div>
         </div>
       </Slider>
+
+      <div className="md:hidden flex flex-row gap-[20px] justify-center items-center">
+        <img
+          src={LeftArrow}
+          alt="prev"
+          className="w-[11px] h-[19px] cursor-pointer"
+          onClick={() => sliderRef.current.slickPrev()}
+        />
+        <img
+          src={RightArrow}
+          alt="next"
+          className="w-[11px] h-[19px] cursor-pointer"
+          onClick={() => sliderRef.current.slickNext()}
+        />
+      </div>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import icon1 from "../../assets/icon1.svg";
 import rightarrow from "../../assets/rarrow.svg";
 
-
 function Business() {
   return (
     <div className="flex flex-col  items-center md:pt-[84px] pt-[61px]">
@@ -10,13 +9,13 @@ function Business() {
         Our Business Sectors
       </h1>
 
-      <p className="inter text-[14px]  text-[#4B5563] pt-[26px] md:w-[30%] text-center">
+      <p className="inter text-[14px]  text-[#4B5563] pt-[26px] md:w-[30%] text-center px-[16px]">
         Golby Diop Holding operates across six key industries, each contributing
         to our vision of sustainable growth and innovation.
       </p>
 
-      <div className="cont mt-[36px] grid grid-cols-4 gap-[13px]">
-        <div className="flex flex-col py-[30px] px-[24px]">
+      <div className="cont mt-[36px] grid md:grid-cols-4 gap-[13px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -32,7 +31,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -48,7 +47,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -64,7 +63,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -80,10 +79,8 @@ function Business() {
         </div>
       </div>
 
-
-
-   <div className="cont mt-[36px] grid grid-cols-4 gap-[13px]">
-        <div className="flex flex-col py-[30px] px-[24px]">
+      <div className="cont mt-[36px] grid md:grid-cols-4 gap-[13px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -99,7 +96,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -115,7 +112,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -131,7 +128,7 @@ function Business() {
           </button>
         </div>
 
-        <div className="flex flex-col py-[30px] px-[24px]">
+        <div className="flex flex-col md:py-[30px] py-[30px] px-[24px]">
           <img src={icon1} alt="icon 1" className="w-[55px] h-[62px]"></img>
 
           <h1 className="inter text-[19px] font-bold leading-[28px] text-[#111827] pt-[19px] ">
@@ -146,12 +143,6 @@ function Business() {
           </button>
         </div>
       </div>
-
-
-
-
-
-
     </div>
   );
 }

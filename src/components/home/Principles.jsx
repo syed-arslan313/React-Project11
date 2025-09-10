@@ -5,9 +5,9 @@ import line from "../../assets/line.svg";
 
 function In() {
   return (
-    <div className="bg-[#fbebd6] mt-[77px] ">
-      <div className="cont mx-auto flex flex-row gap-[68px] ">
-        <div className="flex flex-col w-[49.13%] gap-[36px] justify-center ">
+    <div className="bg-[#fbebd6] md:mt-[77px] mt-[63px] md:pt-0 pt-[45px] md:px-0  px-[5px] ">
+      <div className="cont mx-auto flex md:flex-row flex-col md:gap-[68px] gap-[51px] items-center md:items-start ">
+        <div className="flex flex-col md:w-[49.13%] w-full gap-[36px] justify-center order-2 md:order-1 ">
           <div className="flex flex-row px-[21px] py-[26px] gap-[16px] rounded-[10px] bg-white">
             <img src={light} className="w-[56px] h-[55px]"></img>
             <div className="flex flex-col gap-[8px]">
@@ -42,9 +42,13 @@ function In() {
           </div>
         </div>
 
-        <img src={inn} alt="image" className="w-[45.21%] h-[582px]"></img>
+        <img
+          src={inn}
+          alt="image"
+          className="md:w-[45.21%] md:h-[582px] h-[309px] order-1 md:order-2 "
+        ></img>
       </div>
-      <img src={line} className="w-full h-[5px]"></img>
+      <img src={line} className="w-full h-[5px] mt-[67px] "></img>
     </div>
   );
 }

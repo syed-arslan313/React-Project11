@@ -5,10 +5,10 @@ import Images from "../../components/home/images";
 import Business from "../../components/home/business";
 import In from "../../components/home/Principles";
 import Count from "../../components/home/counter";
-import SimpleSlider from "../../components/home/slider";
+import SimpleSlider from "../../components/home/Partner";
 import Global from "../../components/home/Global";
-import News  from "../../components/home/News";
-import Footer  from "../../components/home/footer";
+import Responsive from "../../components/home/News"
+import Footer from "../../components/home/footer";
 
 function Homee() {
   return (
@@ -21,7 +21,7 @@ function Homee() {
       <Count />
       <SimpleSlider />
       <Global />
-      <News />
+      <Responsive />
       <Footer />
     </div>
   );

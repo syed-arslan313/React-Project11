@@ -7,7 +7,7 @@ function Global() {
       <h1 className="display text-[48px] md:text-start  text-center leading-[36px] text-[#98661C]">
         Our Global Footprint
       </h1>
-      <img src={map} alt="map" className="w-100% h-[657px]"></img>
+      <img src={map} alt="map" className="w-100% md:h-[657px] h-[356px]"></img>
     </div>
   );
 }

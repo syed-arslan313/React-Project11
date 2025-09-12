@@ -54,7 +54,6 @@
 }
 
 /* Desktop: center slide highlight */
-@media (min-width: 768px) {
   .partners-slider .slick-slide {
     @apply opacity-40 transition-opacity duration-300;
   }
@@ -64,7 +63,7 @@
   .partners-slider .slick-center * {
     @apply text-white;
   }
-}
+
 
 
  .partners-slider .slick-center {
@@ -79,7 +78,3 @@
   justify-content: center;
 }
 
-.slick-slide img {
-  width: auto !important;  
-  max-width: none !important;
-}
